@@ -1,0 +1,15 @@
+/* ===== SKELETON LOADING ANIMATIONS ===== */
+.skeleton-card,
+.skeleton-text,
+.skeleton-avatar,
+.skeleton-title {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+.skeleton-card { height: 300px; border-radius: 8px; }
+.skeleton-text { height: 1rem; margin-bottom: 0.5rem; border-radius: 4px; }
+.skeleton-text:last-child { width: 80%; }
+.skeleton-avatar { width: 50px; height: 50px; border-radius: 50%; }
+.skeleton-title { height: 1.5rem; width: 60%; margin-bottom: 1rem; border-radius: 4px; }
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }

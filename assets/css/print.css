@@ -1,0 +1,30 @@
+/* ===== PRINT STYLESHEET ===== */
+@media print {
+    .navbar,
+    .footer,
+    .btn,
+    .search-bar,
+    .cta-section,
+    .modal,
+    .hamburger,
+    .wishlist-btn,
+    .verified-badge,
+    .social-links,
+    .scroll-top { display: none !important; }
+    @page { size: A4; margin: 2cm; }
+    body {
+        background: white !important;
+        color: black !important;
+        font-family: 'Times New Roman', serif !important;
+        font-size: 12pt !important;
+        line-height: 1.5 !important;
+    }
+    a { color: black !important; text-decoration: underline !important; }
+    a[href]::after { content: ' (' attr(href) ')'; font-size: 10pt; font-style: italic; }
+    a[href^='/']::after, a[href^='#']::after { display: none; }
+    h1, h2, h3, h4, h5, h6 { color: black !important; page-break-after: avoid; }
+    img { max-width: 100% !important; page-break-inside: avoid; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    .card, .room-card, .testimonial-card { box-shadow: none !important; border: 1px solid #ddd; page-break-inside: avoid; }
+}
